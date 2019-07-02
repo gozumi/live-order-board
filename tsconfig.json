@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "outDir": "./lib",
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "module": "commonjs",
+        "target": "es6",
+        "jsx": "react",
+        "typeRoots": [
+            "src/_typings"
+        ]
+    },
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+      "node-modules",
+      "**/*.spec.ts"
+    ]
+}

@@ -1,0 +1,17 @@
+# dependencies
+node_modules/
+
+# build
+lib/
+
+# reports
+coverage/
+
+# sonarQube analysi files
+.scannerwork/
+
+# error logs
+yarn-error.log
+
+# system files
+.DS_Store

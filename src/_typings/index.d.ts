@@ -1,15 +1,11 @@
-type Times10 = (n: number) => number
+import { IOrder, ISummaryByType, ISummary } from 'interfaces'
 
-/**
- * (D) Multiplies a given number by 10 and returns the result.
- * @param n The number to be multiplied by 10
- */
-export declare const times10: Times10
+declare class LiveOrderBoard {
+  getOrders(): IOrder
+  registerOrder(order: IOrder): void
+  cancelOrder (userId: string, timestamp: number): void
+  getSummary (): ISummaryByType
+  getSummaryForOrders (orders: IOrder[]): ISummary[]
+}
 
-type Times100 = (n: number) => number
-
-/**
- * (D) Multiplies a given number by 100 and returns the result.
- * @param n The number to be multiplied by 100
- */
-export declare const times100: Times100
+export { IOrder, ISummaryByType, ISummary }
